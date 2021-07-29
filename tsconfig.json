@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2015",
+      "ESNext"
+    ],
+    "outDir": "./dist/",
+    // "typeRoots": [
+    //   "./node_modules/@types/",
+    //   "./src/@types/"
+    // ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "compileOnSave": false,
+  // "include": [
+  //   "./src/**/*",
+  //   // "./src/@types/global.d.ts"
+  // ],
+  "exclude": [
+    "node_modules"
+  ]
+}

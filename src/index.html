@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>Mobile-Upload</title>
+  <style>
+    body {background-color: #eee;}
+  </style>
+  <script>
+    (function(){
+      var timer = null;
+      function setRem(){
+        var docEl = document.documentElement;
+        var width = docEl.clientWidth;
+        docEl.style.fontSize = width / 7.5 + 'px';
+      }
+      window.addEventListener('DOMContentLoaded', function(){
+        setRem();
+      })
+      window.addEventListener('resize', function(){
+        clearTimeout(timer);
+        setTimeout(function(){setRem()}, 300)
+      })
+    })()
+  </script>
+</head>
+<body class="themeRed">
+  <div id="app"></div>
+</body>
+</html>
